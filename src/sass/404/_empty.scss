@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header{
+  flex: 0 0 auto;
+}
+main{
+
+  flex: 1 0 auto;
+}
+footer{
+  flex: 0 0 auto;
+}
+.empty {
+  .header-bottom-wrapper {
+    &:before {
+      height: 10rem;
+    }
+  }
+
+  .trouble {
+    padding: 10rem 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    @media all and (max-width: $break-point-mob-max) {
+      &:before {
+        font-size: 16rem;
+      }
+    }
+
+    @media all and (max-width: $break-point-sm-max) {
+      padding: 5rem 0;
+
+      &:before {
+        top: -10rem;
+        font-size: 20rem;
+      }
+    }
+
+    &:before {
+      content: '404';
+      display: block;
+      position: absolute;
+      font-size: 40rem;
+      font-weight: 900;
+      line-height: 48.8rem;
+      color: #F4F5F7;
+      z-index: -1;
+    }
+    &-section {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      padding:22.5rem 0 19.5rem;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 3.7rem;
+      text-transform: uppercase;
+      color: $darkColor;
+
+      @media all and (max-width: $break-point-sm-max) {
+        padding: 5rem 0;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        text-align: center;
+      }
+    }
+  }
+}

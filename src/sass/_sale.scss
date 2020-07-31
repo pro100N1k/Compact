@@ -1,0 +1,37 @@
+.sale {
+  position: relative;
+
+
+  .products-discount {
+    &-arrows {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+
+      .products-discount__arrow {
+        opacity: 1;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &:first-of-type {
+          margin-right: 2rem;
+          img {
+            transform: scale(-1,1);
+          }
+        }
+      }
+    }
+
+  }
+
+  &-sectiion {
+    
+  }
+}

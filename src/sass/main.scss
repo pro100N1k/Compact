@@ -1,0 +1,26 @@
+// UTILS
+@import "reset";
+@import "mixins";
+
+// LIBS
+@import "libs/bootstrap-grid";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css';
+@import "../../node_modules/selectric/public/selectric.css";
+
+
+// BASE
+@import "fonts";
+@import "base";
+@import "home";
+@import "sale";
+@import "consult";
+@import 'products';
+@import 'about';
+@import "404/empty";
+
+// COMPONENTS
+@import "buttons";
+@import "header";
+@import "footer";

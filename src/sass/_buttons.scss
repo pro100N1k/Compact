@@ -1,0 +1,61 @@
+.btn {
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 2.1rem;
+  font-family: $mainFont;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  outline: none;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+
+  &_size {
+    &--full {
+      width: 100%;
+    }
+    &--large {
+      padding: 0.7rem 4.4rem;
+    }
+    &--main {
+      padding: 0.7rem 2rem;
+    }
+
+  }
+
+  &--large {
+
+  }
+  
+  &_color {
+    &--default {
+      color: $lightColor;
+      border: 0.2rem solid rgba($darkColor,0.8);
+      background: $defaultColor;
+
+      &:hover {
+        color: $darkColor;
+        background: $lightColor 0.2s ease-in-out;
+      }
+    }
+    &--main {
+      color: $lightColor;
+      background: $mainColor;
+
+      &:hover {
+        background: #45DAAF;
+      }
+    }
+  }
+  
+}

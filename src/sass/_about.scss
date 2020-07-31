@@ -1,0 +1,91 @@
+.about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media all and (max-width: $break-point-xs-max) {
+    flex-wrap: wrap;
+  }
+
+  &-section {
+    background: $subColor;
+
+    @media all and (max-width: $break-point-sm-max) {
+      padding: 4rem 0;
+    }
+
+    @media all and (min-width: $break-point-md-min) {
+      padding: 9rem 0;
+    }
+  }
+
+  &__info {
+
+    @media all and (max-width: $break-point-xs-max) {
+      margin-bottom: 6rem;
+    }
+
+    @media all and (min-width: $break-point-sm-min) and (max-width: $break-point-sm-max) {
+      margin-right: 5rem;
+    }
+
+    @media all and (min-width: $break-point-md-min) {
+      width: 45.5rem;
+    }
+
+  }
+  &__list {
+    width: 55.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+
+    @media all and (min-width: $break-point-sm-min) and (max-width: $break-point-sm-max) {
+      flex: none;
+      width: 50%;
+    }
+  }
+
+  &-item {
+    width: 50%;
+
+    &:nth-of-type(even) {
+      padding-left: 1.5rem;
+    }
+    &:nth-of-type(n+3) {
+      margin-top: 8rem;
+    }
+    &__title {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+      font-weight: 800;
+      line-height: 1.6rem;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: calc(100% + 1.5rem);
+        transform: translateY(-50%);
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        background: $mainColor;
+      }
+    }
+    &__value {
+      margin-bottom: 0.8rem;
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 4rem;
+    }
+    &__desc {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 2.2rem;
+    }
+  }
+}
